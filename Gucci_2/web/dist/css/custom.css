@@ -1,0 +1,54 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 11 may 2023, 18:28:58
+    Author     : garci
+*/
+
+.bg-fondo{
+    background-color: #FFFFFF !important;
+}
+.bg-img1 {
+   background-image: url("../imgdist/print_1.svg")!important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+a{
+font-family: 'Times New Roman', Times, serif;
+font-size: 12px;
+}
+.background-image {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  right: unset;
+  left: 0;
+  z-index: -1;
+}
+.ftco-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 0;
+}
+.bg-rojo{
+  color: #6e1624;  
+}
+.bg-grou{
+    background: #6e1624;
+}
+.bg-azu{
+    color: #042b61 ;
+}
+.bg-blanco{
+    color: #FFFFFF;
+}
+
+
+
