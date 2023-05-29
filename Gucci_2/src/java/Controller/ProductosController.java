@@ -54,7 +54,7 @@ public class ProductosController extends HttpServlet {
             int amount;
             float price;
 
-            if (isNumeric(amountParam) && isNumeric(priceParam)) {
+            if (isNumeric(amountParam) && isNumeric(priceParam) && 0<code.length()&& code.length()<=3) {
                 amount = Integer.parseInt(amountParam);
                 price = Float.parseFloat(priceParam);
 
@@ -64,13 +64,13 @@ public class ProductosController extends HttpServlet {
 
                 dispatcher = request.getRequestDispatcher("ViewTable.jsp");
             } else {
-                String errorMessage = "Los campos de cantidad y precio deben ser valores numéricos.";
+                String errorMessage = "Los campos de cantidad y precio deben ser valores numéricos, además, el código debe ser de 3 carácteres";
                 request.setAttribute("errorMessage", errorMessage);
 
                 String script = "<script>alert('" + errorMessage + "');</script>";
                 request.setAttribute("script", script);
-
                 request.getRequestDispatcher("add.jsp").forward(request, response);
+
 
             }
         } else if ("delete".equals(action)) {

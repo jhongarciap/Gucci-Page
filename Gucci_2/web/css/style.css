@@ -8149,7 +8149,7 @@ a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
-  color: #fff !important; }
+  color: #f0f0f0 !important; }
   a:hover, a:focus {
     text-decoration: none;
     color: #9B7F2A; }
@@ -8649,6 +8649,7 @@ h1, h2, h3, h4, h5,
               font-size: 23px; } }
         .owl-carousel.home-slider .slider-item .slider-text .btn-custom {
           background: #042b61 !important;
+          color: #f0f0f0 !important;
           padding: 10px 20px; }
     .owl-carousel.home-slider .owl-nav {
       position: absolute;
@@ -8942,7 +8943,7 @@ h1, h2, h3, h4, h5,
       font-weight: 700;
       text-transform: uppercase; }
       .product .text h3 a {
-        color: #000000; }
+        color: #000000 !important; }
     .product .text p.price {
       margin-bottom: 0;
       color: #000000;
@@ -8989,7 +8990,7 @@ h1, h2, h3, h4, h5,
           background: #9B7F2A;
           color: #fff; }
       .product .text .bottom-area a.buy-now {
-        background: #fff;
+        background: #042b61 ;
         color: #000000; }
         .product .text .bottom-area a.buy-now:hover {
           background: #9B7F2A;

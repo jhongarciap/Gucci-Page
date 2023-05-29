@@ -42,10 +42,13 @@
         %>
     </head>
     <body class="goto-here">
-        <% String script = (String) request.getAttribute("script"); %>
-        <% if (script != null) {%>
-        <%= script%>
-        <% }%>
+<% String errorMessage = (String) request.getAttribute("errorMessage"); %>
+<% if (errorMessage != null && !errorMessage.isEmpty()) { %>
+    <script>
+        alert('<%= errorMessage %>');
+        window.location.href = "add.jsp";
+    </script>
+<% } %>
         <div class="py-1 bg-img1">
             <div class="container ">
                 <div class="row no-gutters d-flex align-items-start align-items-center px-md-0">
@@ -99,7 +102,6 @@
                             </div>
                             <div class="form-group">
                                 <input type="submit" value="Guardar" class="btn btn-primary py-3 px-5" id="save">
-                                <input type="button" value="Borrar Campos" class="btn btn-primary py-3 px-5" onclick="resetForm()">
                             </div>
                         </form>
 

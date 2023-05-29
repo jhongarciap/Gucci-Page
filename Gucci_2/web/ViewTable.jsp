@@ -72,7 +72,7 @@
             <div class="container">
                 <div class="row justify-content-center mb-3 pb-3">
                     <div class="col-md-12 heading-section text-center ftco-animate">
-                        <a class="navbar-brand" href="index.html"><img src="images/LogoGucci.png" width="150" height="" alt="LogoGucci"/></a>
+                        <a class="navbar-brand" href="options.html"><img src="images/LogoGucci.png" width="150" height="" alt="LogoGucci"/></a>
                         <h2 class="mb-4">Lista de productos</h2>
 
                     </div>
@@ -90,7 +90,7 @@
                                         <th>Precio</th>
                                         <th>Cantidad</th>
                                         <th>Especificaciones</th>
-                                        <th>Eliminar</th>
+                                        <th>-</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -106,7 +106,7 @@
                                             <td><c:out value="${product.amount}" /></td>
                                             <td><c:out value="${product.price}" /></td>
                                             <td><c:out value="${product.specifications}" /></td>
-                                            <td><a href="ProductosController?action=delete&code=<c:out value="${product.code}" />" class="bg-azu">Eliminar</a></td>
+                                            <td><a href="ProductosController?action=delete&code=<c:out value="${product.code}" />" class="btn btn-black px-3 py-2">Eliminar</a></td>
                                         </tr>
                                     </c:forEach>
 
@@ -115,11 +115,17 @@
                         </div>
                     </div>
                 </div>
-                                                                                <a href="ViewTable.jsp" class="buy-now text-center py-2">Ir<span><i class="ion-ios-cart ml-1"></i></span></a>
+                <a href="ViewTable.jsp" class="buy-now text-center py-2">Ir<span><i class="ion-ios-cart ml-1"></i></span></a>
 
             </div>
-                                    
-    <footer class="ftco-footer ftco-section">
+            <div class="container center">
+                <div class="product d-flex flex-column">
+                    <a href="ProductosController?action=add" class="btn btn-black px-3 py-2">Añadir Producto<span></span></a>
+                </div>
+            </div>
+
+        </section>
+        <footer class="ftco-footer ftco-section">
             <div class="container">
                 <div class="row">
                     <div class="mouse">
@@ -165,5 +171,5 @@
         <script src="js/funtionIndex.js"></script>
         <script src="js/addfuntions.js"></script>
 
-</body>
+    </body>
 </html>
